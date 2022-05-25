@@ -44,8 +44,27 @@ void inputOutput(){
   cin>>num2;
   int sum = num1+num2;
   cout<<"sum is: "<<sum<<endl;
+}
 
+//consitions in cpp--> if else, else if
+void conditions(){
+  int savings ;
+  cin >> savings ;
+  if ( savings > 5000 ) {
+    if(savings>10000){
+      cout <<"Roadtrip with neha\n";
+    }
+    else{
+      cout <<"Shopping with neha\n";
+    }
 
+  }
+  else if ( savings > 2000 ) {
+  cout << " With Rashmi \n " ;
+  }
+  else {
+  cout << " With Friends \n " ;
+  }
 }
 
 
@@ -58,7 +77,8 @@ int main() {
 
   //call and run user defined functions
   // dataTypes();
-  inputOutput();
+  // inputOutput();
+  conditions();
   return 0;
 }
 
