@@ -33,3 +33,7 @@
 
 #input/output text files
 *.txt
+
+#other
+*.vscode
+*.json
