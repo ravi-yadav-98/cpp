@@ -68,6 +68,48 @@ void conditions(){
 }
 
 
+// Loops in cpp
+void runLoops()
+{
+  // use for repetition of any task
+  //for loop, while loop
+  //example: get sum of numbers till n
+  int n;
+  cin>>n;
+  int sum =0;
+  for(int iter=1;iter<=n;iter++)
+  {
+    sum = sum+iter;
+
+  }
+  cout<<sum;
+
+}
+
+//jumps in Loops
+
+void jumpInLoop()
+{
+  //controls in loop--> break and continue
+  //continue---> skip to the next iteration of the loop
+  //break--> terminate the loop
+  int pocketMoney;
+  cin>>pocketMoney;
+  for (int date=1 ; date<=30 ; date++ ) {
+    if ( date % 2 == 0 ) {
+      continue ;
+    }
+    if ( pocketMoney == 0 ) {
+      break ;
+    }
+  cout << " Go out today ! " << endl ;
+  pocketMoney - pocketMoney - 300 ;
+
+
+  }
+}
+
+
 int main() {
   #ifndef ONLINE_JUDGE
     freopen("input.txt", "r", stdin);
@@ -78,7 +120,9 @@ int main() {
   //call and run user defined functions
   // dataTypes();
   // inputOutput();
-  conditions();
+  // conditions();
+  // runLoops();
+  jumpInLoop();
   return 0;
 }
 
