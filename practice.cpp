@@ -83,13 +83,14 @@ void numberNotDivisibleBy3(){
     }
 }
 
-void checkPrime(){
-    int n;
-    cin>>n;
+// Problem:05 Check if input number is prime or Not.
+string checkPrime(int n){
+    // int n;
+    // cin>>n;
     int i;
     for(int i=2;i<n;i++){
         if(n%i==0){
-            cout<<"Not Prime"<<endl;
+            return "Not Prime";
             break;
         }
 
@@ -97,10 +98,28 @@ void checkPrime(){
     }
     if (i==n){
     }
-    cout<<"prime"<<endl;
+    return "Prime";
 }
 
+// problem:06 Print all prime numbers between two input numbers
 
+void printPimeNumber(int num1, int num2){
+    // int num1, num2;
+    // cin>>num1>>num2;
+    for (int i=num1;i<num2;i++){
+        if(checkPrime(i)=="Prime" && i!=1){
+            cout<<i<<endl;
+        }
+        else{
+            continue;
+        }
+
+    }
+
+    }
+
+
+// main func
 int main() {
 //   #ifndef ONLINE_JUDGE
 //     freopen("input.txt", "r", stdin);
@@ -114,6 +133,8 @@ int main() {
     // checkVowel();
     // userInputCheck();
     // numberNotDivisibleBy3();
-    checkPrime();
+    // string x = checkPrime(11);
+    // cout<<x<<endl;
+    printPimeNumber(1, 100);
   return 0;
 }

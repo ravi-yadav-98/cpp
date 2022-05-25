@@ -111,10 +111,10 @@ void jumpInLoop()
 
 
 int main() {
-  #ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-  #endif
+  // #ifndef ONLINE_JUDGE
+  //   freopen("input.txt", "r", stdin);
+  //   freopen("output.txt", "w", stdout);
+  // #endif
 
 
   //call and run user defined functions
