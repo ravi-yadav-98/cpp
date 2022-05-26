@@ -119,6 +119,39 @@ void printPimeNumber(int num1, int num2){
     }
 
 
+//Switch statements
+//Problem:07 Simple Calculator
+
+void simpleCalculator(){
+    int n1,n2;
+    char op;
+    cout<<"Enter 2 numbers: ";
+    cin>>n1>>n2;
+    cout<<"Enter operand: ";
+    cin>>op;
+    switch (op)
+    {
+        case '+':
+            cout<<n1+n2<<endl;
+            break;
+        case '-':
+            cout<<n1-n2<<endl;
+            break;
+        case '*':
+            cout<<n1*n2<<endl;
+            break;
+        case '/':
+            cout<<n1/n2<<endl;
+            break;
+        case '%':
+            cout<<n1%n2<<endl;
+            break;
+        default:
+            cout<<"Operator not found!"<<endl;
+            break;
+    }
+}
+
 // main func
 int main() {
 //   #ifndef ONLINE_JUDGE
@@ -135,6 +168,7 @@ int main() {
     // numberNotDivisibleBy3();
     // string x = checkPrime(11);
     // cout<<x<<endl;
-    printPimeNumber(1, 100);
+    // printPimeNumber(1, 100);
+    simpleCalculator();
   return 0;
 }

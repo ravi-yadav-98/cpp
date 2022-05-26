@@ -109,7 +109,50 @@ void jumpInLoop()
   }
 }
 
+//Switch statements
+/*Switch case statements are a substitute for long if statements
+that compare a variable to multiple values.*/
 
+void swicthStatements(){
+  char button;
+  cout<<"Enter a character: ";
+  cin>>button;
+  switch (button) {
+    case 'a':
+      cout<<"Hello"<<endl;
+      break;
+    case 'b':
+      cout<<"Namaste"<<endl;
+      break;
+    case 'c':
+      cout<<"Salut"<<endl;
+      break;
+    case 'd':
+      cout<<"Hola"<<endl;
+      break;
+    default:
+      cout<<"I am still Learning more !!"<<endl;
+      break;
+
+  }
+}
+
+// Operators in cpp
+
+void operators(){
+  int i =1, j=2, k=3;
+  // int j = ++i;
+  // cout<<"Value of j: "<<j<<endl;
+  // cout<<"value of i: "<<i<<endl;
+  // i = i++ + ++i;
+  // cout<<"value of i: "<<i<<endl;
+  int m = i-- - j-- - k--;
+  cout<<"value of m: "<<m<<endl;
+  cout<<"value of i: "<<i<<endl;
+  cout<<"Value of j: "<<j<<endl;
+  cout<<"value of k: "<<k<<endl;
+
+}
 int main() {
   // #ifndef ONLINE_JUDGE
   //   freopen("input.txt", "r", stdin);
@@ -122,7 +165,9 @@ int main() {
   // inputOutput();
   // conditions();
   // runLoops();
-  jumpInLoop();
+  // jumpInLoop();
+  // swicthStatements();
+  operators();
   return 0;
 }
 
