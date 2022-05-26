@@ -1,5 +1,7 @@
 //Practice question on different topics
 #include <iostream>
+#include <cmath>
+#include <math.h>
 using namespace std;
 
 //Conditional statements in cpp
@@ -88,7 +90,7 @@ string checkPrime(int n){
     // int n;
     // cin>>n;
     int i;
-    for(int i=2;i<n;i++){
+    for(int i=2;i<=sqrt(n);i++){
         if(n%i==0){
             return "Not Prime";
             break;
@@ -152,7 +154,55 @@ void simpleCalculator(){
     }
 }
 
-// main func
+
+//problem:08 Reverse a Number
+void reverseNumber()
+{
+    int num;
+    cout<<"Enter a number: ";
+    cin>>num;
+    int  reverseNum=0;
+    while(num>0)
+    {
+        int lastDigit = num%10;
+        reverseNum = reverseNum*10+lastDigit;
+        num=num/10;
+
+    }
+    cout<<"Reverse Num: "<<reverseNum<<endl;
+
+}
+
+//Armstrong Number
+void checkArmstrongNum()
+{
+    int num;
+    cout<<"Enter a number: ";
+    cin>>num;
+    int sum =0;
+    int originalNum = num;
+    while(num>0)
+    {
+        int lastDigit = num%10;
+        sum+=pow(lastDigit,3);
+        num = num/10;
+
+        if (num < 1)
+        {
+            sum = sum + pow(1, 3);
+        }
+
+    }
+    if(sum==originalNum)
+    {
+        cout<<"Armstring Number !"<<endl;
+    }
+    else
+    {
+        cout<<"Not a Armstring Number !"<<endl;
+    }
+}
+// main function-->driver func
 int main() {
 //   #ifndef ONLINE_JUDGE
 //     freopen("input.txt", "r", stdin);
@@ -169,6 +219,8 @@ int main() {
     // string x = checkPrime(11);
     // cout<<x<<endl;
     // printPimeNumber(1, 100);
-    simpleCalculator();
+    // simpleCalculator();
+    // reverseNumber();
+    checkArmstrongNum();
   return 0;
 }
