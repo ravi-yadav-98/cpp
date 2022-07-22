@@ -59,9 +59,9 @@ There are 4 access modifiers in C++ :
 
 SNo | Topic | Link | Date Completed | 
 ----|-------|------|----------------|
-1 | Default Constructor | - | not done |
-2 | Parameterised Constructor | - | not done |
-3 | Copy Constructor : Deep vs shallow copy | [view](https://www.geeksforgeeks.org/difference-between-shallow-and-deep-copy-of-a-class/) | not done |
+1 | Default Constructor | - | done |
+2 | Parameterised Constructor | - | done |
+3 | Copy Constructor : Deep vs shallow copy | [view](https://www.geeksforgeeks.org/difference-between-shallow-and-deep-copy-of-a-class/) | done |
 4 | Copy Constructor : copy ctor vs assignment | [view](https://www.geeksforgeeks.org/copy-constructor-vs-assignment-operator-in-c/) | not done |
 5 | Virtual Constructor | [view](https://www.tutorialspoint.com/virtual-constructor-in-cplusplus) | not done |
 6 | Virtual Copy Constructor | [view](https://www.tutorialspoint.com/virtual-copy-constructor-in-cplusplus) | not done |
